@@ -1,4 +1,8 @@
-export PS1="`uname -n`$ "
+if [ $UID == 0 ]; then
+  export PS1="`uname -n`# "
+else
+  export PS1="`uname -n`$ "
+fi
 
 set -o vi
 
