@@ -1,8 +1,4 @@
-if [ $UID == 0 ]; then
-  export PS1="`hostname -s`# "
-else
-  export PS1="`hostname -s`$ "
-fi
+export PS1="\h\$ "
 
 set -o vi
 
