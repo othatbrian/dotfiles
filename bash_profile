@@ -1,4 +1,3 @@
-hostname=`uname -n | cut -d. -f1`
 if [ $UID == 0 ]; then
   export PS1="`hostname -s`# "
 else
